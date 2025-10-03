@@ -1,12 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import Viewer from "@/components/Viewer";
+import Viewer from "@/components/ViewerXFDF";
 
 export default function Home() {
 	const [isViewerOpen, setIsViewerOpen] = useState(false);
 	const webSDKVersion = process.env.NEXT_PUBLIC_WEB_SDK_VERSION;
-	console.log("Web SDK Version:", webSDKVersion);
 
 	const openViewer = () => {
 		setIsViewerOpen(true);
@@ -44,7 +43,7 @@ export default function Home() {
 
 				{/* Viewer Container */}
 				<div className="max-w-7xl mx-auto h-[calc(100vh-4rem)]">
-					<Viewer document="/documents/SampleSignedDocumentGlobalTrust.pdf" />
+					<Viewer document="/documents/xfa-example_fixed_layout.pdf" />
 				</div>
 			</div>
 		);
@@ -198,9 +197,7 @@ export default function Home() {
 								<h3 className="text-lg font-semibold text-gray-900">
 									Sample Document
 								</h3>
-								<p className="text-gray-600">
-									SampleSignedDocumentGlobalTrust.pdf
-								</p>
+								<p className="text-gray-600">xfa-example_sterile.pdf</p>
 								<p className="text-sm text-gray-500">
 									Ready to view with advanced features
 								</p>

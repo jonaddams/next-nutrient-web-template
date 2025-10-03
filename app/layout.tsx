@@ -23,7 +23,7 @@ export default function RootLayout({
 }: Readonly<{
 	children: React.ReactNode;
 }>) {
-	const webSDKVersion = process.env.NEXT_PUBLIC_WEB_SDK_VERSION || "1.5.0";
+	const webSDKVersion = process.env.NEXT_PUBLIC_WEB_SDK_VERSION;
 	const cdnUrl = `https://cdn.cloud.pspdfkit.com/pspdfkit-web@${webSDKVersion}/nutrient-viewer.js`;
 
 	return (

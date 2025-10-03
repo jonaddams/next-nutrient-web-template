@@ -17,6 +17,10 @@ export default function Viewer({ document }: ViewerProps) {
 			NutrientViewer.load({
 				container,
 				document: document,
+				allowLinearizedLoading: true,
+			}).then((instance) => {
+				// Instance loaded successfully
+				window.instance = instance;
 			});
 		}
 
