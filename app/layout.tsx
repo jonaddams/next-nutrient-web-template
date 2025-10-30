@@ -25,6 +25,7 @@ export default function RootLayout({
 }>) {
 	const webSDKVersion = process.env.NEXT_PUBLIC_WEB_SDK_VERSION;
 	const cdnUrl = `https://cdn.cloud.pspdfkit.com/pspdfkit-web@${webSDKVersion}/nutrient-viewer.js`;
+	// const cdnUrl = "https://cdn.cloud.pspdfkit.com/pspdfkit-web@2024.6.0/pspdfkit.js";
 
 	return (
 		<html lang="en">
