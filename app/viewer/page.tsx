@@ -44,7 +44,7 @@ export default function Home() {
 
 				{/* Viewer Container */}
 				<div className="max-w-7xl mx-auto h-[calc(100vh-4rem)]">
-					<Viewer document="/documents/SampleSignedDocumentGlobalTrust.pdf" />
+					<Viewer document="/documents/pdf-sample-intivahealth.pdf" />
 				</div>
 			</div>
 		);
